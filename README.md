@@ -4,7 +4,7 @@
 * How to display the **header** for a field that is being used only on the **Text** or **Label** card?
 * How to name an **aggregated** column in Tableau?
 #### Answer
-## Additional resources - [resource](https://youtu.be/qgezLad4OnU)
+## Additional resources - [Resource](https://youtu.be/qgezLad4OnU)
 #### ****Option 1****
 
 1.  Drag **Measure Names** from Dimensions to **Columns**.
