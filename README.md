@@ -30,3 +30,45 @@
 3.  Drag the newly created field "Title" to  **Columns**.
 4.  Right-click on the text "Title" and select  **Hide field labels for columns**.
 
+
+### Question
+
+* How to change the dimension header in crosstab without actually changing the Dimension Name in the data source?
+
+  
+![User-added image](https://kb.tableau.com/servlet/rtaImage?eid=ka06Q000000tfFk&feoid=00N60000002Wwyw&refid=0EM6Q0000027gsV)
+
+#### **Environment**
+
+-   Tableau Desktop
+
+#### **Answer**
+
+The ability to only change the dimension header in the view is not currently built into Tableau Desktop.  
+  
+Consider the workaround which achieves similar functionality.  
+  
+Please note that this method only applies to  [Dimensions](https://help.tableau.com/current/pro/desktop/en-us/datafields_typesandroles.htm) (Discrete or Continuous). When you are using Dates, Measures, or Attributes that are other than a Dimension, this workaround is not applicable.
+
+##### **Follow the steps below:**
+
+1. Double-click the dimension added to the [Rows/Columns] shelf.
+
+![User-added image](https://kb.tableau.com/servlet/rtaImage?eid=ka06Q000000tfFk&feoid=00N60000002Wwyx&refid=0EM6Q0000027gsf)
+
+2. Add "//Dimension Name" at the beginning.
+
+![User-added image](https://kb.tableau.com/servlet/rtaImage?eid=ka06Q000000tfFk&feoid=00N60000002Wwyx&refid=0EM6Q0000027gsk)
+
+3. Press "Shift + Enter" to add a new line character.
+
+![User-added image](https://kb.tableau.com/servlet/rtaImage?eid=ka06Q000000tfFk&feoid=00N60000002Wwyx&refid=0EM6Q0000027gsp)  
+
+Finally, the dimension header can be changed like in the below image.
+
+![User-added image](https://kb.tableau.com/servlet/rtaImage?eid=ka06Q000000tfFk&feoid=00N60000002Wwyx&refid=0EM6Q0000027gsu)  
+* The dimension in the [Rows/Columns] shelf has two lines like below and it will show the  **first line as the header**  and show  **the dimension in the second line.**  
+---------------------  
+//Dimension Name  
+[Category]  
+---------------------
