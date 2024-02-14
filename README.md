@@ -1,6 +1,6 @@
 ## Tableau Handbook
 
-### Question
+### Question 1
 * How to display the **header** for a field that is being used only on the **Text** or **Label** card?
 * How to name an **aggregated** column in Tableau?
 #### Answer
@@ -31,7 +31,7 @@
 4.  Right-click on the text "Title" and select  **Hide field labels for columns**.
 
 
-### Question
+### Question 2
 
 * How to change the dimension header in crosstab without actually changing the Dimension Name in the data source?
 
