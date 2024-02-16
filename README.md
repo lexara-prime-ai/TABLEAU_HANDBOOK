@@ -122,3 +122,11 @@ This method is especially useful for filtering across multiple data sources when
 To filter a non-string value, cast the dimension as a string within the conditional filter formula using the STR() function. For example:  
   
 `[Search String] = "All" OR CONTAINS(STR([<dimension>]),[Search String])`
+
+
+
+# LIKE clause with parameter in custom sql of tableau
+```sql
+where custom_class like '%' + <parameters.equipment_class> + '%'
+```
+
