@@ -72,3 +72,54 @@ Finally, the dimension header can be changed like in the below image.
 //Dimension Name  
 [Category]  
 ---------------------
+
+
+
+#### **Question**
+
+How to filter views using wildcard parameters.  
+
+#### **Environment**
+
+Tableau Desktop
+
+#### **Answer**
+
+The result of these steps can be reviewed in the attached .twbx.
+
+#### **Step 1: Build the View**
+
+1.  In Tableau Desktop, connect to the Superstore sample data.
+2.  Select **Data** > **Connect to Data**, and then connect to the Coffee Chain sample data.
+3.  In the  **Data**  pane, click the Superstore sample data.
+4.  Drag **Region** to **Rows**.
+5.  Drag  **Sales**  to  **Text**.
+6.  In the  **Data**  pane, click the Coffee Chain sample data.
+7.  Drag **State** to **Rows**.
+
+#### **Step 2: Create the Parameter**
+
+1.  Right-click in the  **Data**  pane, and then select **Create Parameter**.
+2.  In the Create Parameter dialog box, do the following, and then click **OK**:
+    -   Name the parameter. In this example, the parameter is named **Search String**.
+    -   For **Data Type**, select **String**.
+    -   For **Current value**, enter **All**.
+    -   For **Allowable values**, select **All**.
+3.  Right-click the parameter and then select **Show Parameter Control**.
+
+#### **Step 3: Create the Filter**
+
+1.  In the  **Data**  pane, select the data source to be filtered. In this example, select the Superstore sample data.
+2.  Drag  **State**  to **Filters**.
+3.  On the  **Condition**  tab, select  **By Formula**, enter a formula similar to the following, and then click  **OK**: `[Search String] = "All" OR CONTAINS([State],[Search String]).`
+4.  Optionally, right-click the dimension on **Filters**, and then select  **Apply to Worksheets**  >  **All Using This Data Source**.
+5.  Repeat steps  **4**-**7**  for all data sources to be filtered.
+6.  In the  **Search String**  text box, enter in the desired state.
+
+#### **Additional Information**
+
+This method is especially useful for filtering across multiple data sources when using blended data.  
+  
+To filter a non-string value, cast the dimension as a string within the conditional filter formula using the STR() function. For example:  
+  
+`[Search String] = "All" OR CONTAINS(STR([<dimension>]),[Search String])`
