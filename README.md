@@ -130,3 +130,7 @@ To filter a non-string value, cast the dimension as a string within the conditio
 where custom_class like '%' + <parameters.equipment_class> + '%'
 ```
 
+* Alternatively
+```sql
+where text like concat(concat('%',<Parameters.search text>), '%')
+```
