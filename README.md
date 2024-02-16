@@ -68,10 +68,9 @@ Finally, the dimension header can be changed like in the below image.
 
 ![User-added image](https://kb.tableau.com/servlet/rtaImage?eid=ka06Q000000tfFk&feoid=00N60000002Wwyx&refid=0EM6Q0000027gsu)  
 * The dimension in the [Rows/Columns] shelf has two lines like below and it will show the  **first line as the header**  and show  **the dimension in the second line.**  
----------------------  
-//Dimension Name  
-[Category]  
----------------------
+--------------------------------
+### //Dimension Name [Category]  
+--------------------------------
 
 
 
