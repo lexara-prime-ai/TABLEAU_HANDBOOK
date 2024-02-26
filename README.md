@@ -141,3 +141,5 @@ where text like concat(concat('%',<Parameters.search text>), '%')
 #### *Answer*
 Wildcard search
 
+#### *Explanation*
+The wildcard is an advanced search technique that can be used to maximize your search results in library databases. Wildcards are used in search terms to represent one or more other characters.
