@@ -74,7 +74,7 @@ Finally, the dimension header can be changed like in the below image.
 
 
 
-#### **Question**
+#### **Question 3**
 
 How to filter views using wildcard parameters.  
 
@@ -134,3 +134,10 @@ where custom_class like '%' + <parameters.equipment_class> + '%'
 ```sql
 where text like concat(concat('%',<Parameters.search text>), '%')
 ```
+
+### Question 4
+* You can utilize _________________ to union files across folders and worksheets across workbooks while working with Excel, text file data, JSON file data, or.pdf file data. The search is restricted to the connection that has been selected.
+
+#### *Answer*
+Wildcard search
+
